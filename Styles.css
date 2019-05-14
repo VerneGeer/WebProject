@@ -1,0 +1,146 @@
+﻿/* Document */
+body
+    {
+      background-color: #fff2df;
+
+      font-family:Verdana;
+    }
+    
+#Main
+    {
+      margin: 0 auto;
+      align: center;
+      max-width: 1024px;
+      height: auto ;
+      background-color: #fff2df;
+    }                      
+
+#hlavicka
+{
+    float:none;
+    max-height:240px;
+    min-height:125px;
+}
+
+.textHlavicka
+{
+    float:left;
+}
+
+
+.logoHlavicka
+{
+    float:right;
+    margin-top:30px;
+    margin-left:25px;
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient( #a2836e, #d9ad7c, #d9ad7c);
+  overflow: auto;
+  
+}
+
+.navbar a {
+  float: left;
+  padding: 16px 0px 16px 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  width: 18%; 
+  text-align: center;
+}
+
+.navbar a:last-child {
+  float: left;
+  color: white;
+  text-decoration: none;
+  width: 28%; 
+
+}
+
+.navbar a:hover {
+  background: linear-gradient( #674d3c, #a2836e, #a2836e);
+}
+
+.navbar a.active {
+  background:  linear-gradient( #674d3c, #a2836e, #a2836e);
+}
+
+@media screen and (max-width: 670px) {
+  .navbar a, .navbar a:last-child {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#Header
+{
+      display: table;
+      Height: 88px;
+      Margin-top:0px;
+      width: 1024px;
+      background: #a3b7c8;
+      background: linear-gradient( #fcfdfd ,#468dd1);
+      border-bottom: 1px solid #3872a8;
+    }
+
+  
+    
+    .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
